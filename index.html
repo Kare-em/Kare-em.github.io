@@ -7,11 +7,11 @@
   <meta name="description" content="Senior Playable Ads Developer на Cocos Creator и Unity. Плеиблы под AppLovin, Meta, Google, TikTok, Unity и другие сети — от идеи до одного HTML за часы." data-l10n data-en-content="Senior Playable Ads Developer on Cocos Creator and Unity. Playables for AppLovin, Meta, Google, TikTok, Unity and other networks — from idea to a single HTML in hours.">
   <meta property="og:title" content="Карим Агишев — Playable Ads Developer" data-l10n data-en-content="Karim Agishev — Playable Ads Developer">
   <meta property="og:description" content="Плеиблы на Cocos Creator и Unity под все рекламные сети. 6+ лет в геймдеве." data-l10n data-en-content="Playables on Cocos Creator and Unity for every ad network. 6+ years in game dev.">
-  <meta name="theme-color" content="#0B0E13">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='10' y='4' width='14' height='7' rx='2' fill='%23FF6B57'/%3E%3Crect x='6' y='13' width='20' height='7' rx='2' fill='%2336D6E7'/%3E%3Crect x='2' y='22' width='28' height='7' rx='2' fill='%23C6F432'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#020711">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2314C8E8'/%3E%3Cstop offset='.5' stop-color='%232F6BFF'/%3E%3Cstop offset='1' stop-color='%23FF4D7E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M12.5 10.2v11.6c0 .9 1 1.4 1.7.9l8.6-5.8c.6-.4.6-1.4 0-1.8l-8.6-5.8c-.7-.5-1.7 0-1.7.9z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- в <head>, а не в конце body: язык должен встать до первой отрисовки -->
   <script src="assets/js/i18n.js"></script>
@@ -25,7 +25,7 @@
 <header class="header" id="top">
   <div class="header__inner">
     <a class="logo" href="#top" aria-label="На главную" data-l10n data-en-aria-label="Home">
-      <span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="logo__mark" aria-hidden="true"><i></i></span>
       <span class="logo__text"><span lang="ru">Карим Агишев</span><span lang="en">Karim Agishev</span></span>
     </a>
     <nav class="nav" id="nav">
@@ -39,7 +39,7 @@
       <button type="button" data-set-lang="ru">RU</button>
       <button type="button" data-set-lang="en">EN</button>
     </div>
-    <a class="btn btn--primary btn--sm header__cta" href="#contact"><span lang="ru">Связаться</span><span lang="en">Contact</span></a>
+    <a class="btn btn--white btn--sm header__cta" href="#contact"><span lang="ru">Связаться</span><span lang="en">Contact</span></a>
     <button class="burger" id="burger" aria-label="Меню" data-l10n data-en-aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
@@ -48,26 +48,18 @@
 
 <!-- ───────────── Hero ───────────── -->
 <section class="hero">
-  <div class="container hero__grid">
-    <div class="hero__copy">
-      <span class="chip"><span class="dot"></span><span lang="ru">Открыт к предложениям · удалённо</span><span lang="en">Open to offers · remote</span></span>
-      <h1 class="hero__title"><span lang="ru">Плеиблы, в которые<br><span class="accent">хочется тапнуть</span></span><span lang="en">Playables that<br><span class="accent">beg to be tapped</span></span></h1>
-      <p class="hero__lead"><span lang="ru">Senior Playable Ads Developer на&nbsp;Cocos Creator и&nbsp;Unity. Больше 6&nbsp;лет в&nbsp;геймдеве&nbsp;— от&nbsp;архитектуры и&nbsp;механики до&nbsp;одного лёгкого HTML под любую рекламную сеть.</span><span lang="en">Senior Playable Ads Developer working in&nbsp;Cocos Creator and&nbsp;Unity. 6+&nbsp;years in&nbsp;game dev&nbsp;— from architecture and mechanics to&nbsp;a&nbsp;single lightweight HTML for any ad&nbsp;network.</span></p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#contact"><span lang="ru">Обсудить проект</span><span lang="en">Discuss a project</span></a>
-        <a class="btn btn--ghost" href="#play"><span lang="ru">Сыграть в демо ↓</span><span lang="en">Play the demo ↓</span></a>
-      </div>
-      <p class="hero__note"><span lang="ru">Идея → играбельный билд за часы, а не за дни</span><span lang="en">Idea → playable build in hours, not days</span></p>
+  <div class="hero__tunnel" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <svg class="sparkle" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+    <span class="chip"><span class="dot"></span><span lang="ru">Открыт к предложениям · удалённо</span><span lang="en">Open to offers · remote</span></span>
+    <h1 class="hero__title"><span lang="ru">Плеиблы, в которые<br><span class="grad">хочется тапнуть</span></span><span lang="en">Playables that<br><span class="grad">beg to be tapped</span></span></h1>
+    <p class="hero__lead"><span lang="ru">Senior Playable Ads Developer на&nbsp;Cocos Creator и&nbsp;Unity. Больше 6&nbsp;лет в&nbsp;геймдеве&nbsp;— от&nbsp;архитектуры и&nbsp;механики до&nbsp;одного лёгкого HTML под любую рекламную сеть.</span><span lang="en">Senior Playable Ads Developer working in&nbsp;Cocos Creator and&nbsp;Unity. 6+&nbsp;years in&nbsp;game dev&nbsp;— from architecture and mechanics to&nbsp;a&nbsp;single lightweight HTML for any ad&nbsp;network.</span></p>
+    <div class="hero__actions">
+      <a class="btn btn--cta" href="#contact"><span lang="ru">Обсудить проект</span><span lang="en">Discuss a project</span></a>
+      <a class="btn btn--ghost" href="#play"><span lang="ru">Сыграть в демо ↓</span><span lang="en">Play the demo ↓</span></a>
     </div>
-
-    <!-- башня из блоков — та же механика, что в демо ниже; клик ведёт к нему -->
-    <a class="hero__art" href="#play" aria-label="Сыграть в демо" data-l10n data-en-aria-label="Play the demo">
-      <span class="art__bar mono"><i></i>stack_tower.html<b>Canvas 2D</b></span>
-      <span class="art__field">
-        <span class="art__hint mono"><span lang="ru">▶ сыграть в демо</span><span lang="en">▶ play the demo</span></span>
-        <span class="tower" id="heroTower" aria-hidden="true"></span>
-      </span>
-    </a>
+    <p class="hero__note"><span lang="ru">Идея → играбельный билд за часы, а не за дни</span><span lang="en">Idea → playable build in hours, not days</span></p>
   </div>
 
   <div class="marquee" aria-label="Студии, где я работал" data-l10n data-en-aria-label="Studios I've worked with">
@@ -81,8 +73,9 @@
 <!-- ───────────── Демо / проекты ───────────── -->
 <section class="section play" id="play">
   <div class="container">
-    <div class="section__head reveal">
-      <h2><span lang="ru">От ТЗ до</span><span lang="en">From brief to</span> <span class="accent">tap-to-try</span></h2>
+    <div class="section__head center reveal">
+      <svg class="sparkle sparkle--sm" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+      <h2><span lang="ru">От ТЗ до</span><span lang="en">From brief to</span> <span class="grad">tap-to-try</span></h2>
       <p><span lang="ru">Плеибл лучше один раз потрогать, чем десять раз описать. Переключайте проекты и играйте прямо в&nbsp;телефоне&nbsp;— это настоящие HTML-сборки.</span><span lang="en">A playable is better touched once than described ten times. Switch projects and play right in&nbsp;the&nbsp;phone&nbsp;— these are real HTML builds.</span></p>
     </div>
 
@@ -91,6 +84,7 @@
     <div class="brief reveal">
       <span class="brief__label mono"><span lang="ru">ТЗ</span><span lang="en">Brief</span></span>
       <p class="brief__text" id="projectBrief"></p>
+      <span class="brief__send" aria-hidden="true">↑</span>
     </div>
 
     <div class="stage reveal">
@@ -115,20 +109,20 @@
 
 <!-- ───────────── Цифры ───────────── -->
 <section class="section stats">
-  <div class="container"><div class="stats__grid">
+  <div class="container stats__grid">
     <div class="stat reveal"><b data-count="6" data-suffix="+">0</b><span><span lang="ru">лет в геймдеве</span><span lang="en">years in game dev</span></span></div>
     <div class="stat reveal"><b data-count="2" data-suffix="+">0</b><span><span lang="ru">года делаю Playable Ads</span><span lang="en">years building playable ads</span></span></div>
     <!-- единица — отдельной парой, а не data-suffix: счётчик отрабатывает один раз и язык бы не сменил -->
     <div class="stat reveal"><b><i data-count="5" data-prefix="≤ ">0</i><i lang="ru"> МБ</i><i lang="en"> MB</i></b><span><span lang="ru">вес готового билда</span><span lang="en">final build size</span></span></div>
     <div class="stat reveal"><b data-count="10" data-suffix="+">0</b><span><span lang="ru">рекламных сетей из одного билда</span><span lang="en">ad networks from one build</span></span></div>
-  </div></div>
+  </div>
 </section>
 
 <!-- ───────────── Как работаю ───────────── -->
 <section class="section" id="process">
   <div class="container">
-    <div class="section__head reveal">
-      <h2><span lang="ru">Как я <span class="accent">работаю</span></span><span lang="en">How I <span class="accent">work</span></span></h2>
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Как я <span class="grad">работаю</span></span><span lang="en">How I <span class="grad">work</span></span></h2>
       <p><span lang="ru">Пять шагов от вашей идеи до плеибла, который проходит модерацию сети с первого раза.</span><span lang="en">Five steps from your idea to a playable that passes network moderation on the first try.</span></p>
     </div>
 
@@ -247,8 +241,8 @@
 <!-- ───────────── Навыки ───────────── -->
 <section class="section" id="skills">
   <div class="container">
-    <div class="section__head reveal">
-      <h2><span lang="ru">Стек и <span class="accent">навыки</span></span><span lang="en">Stack &amp; <span class="accent">skills</span></span></h2>
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Стек и <span class="grad">навыки</span></span><span lang="en">Stack &amp; <span class="grad">skills</span></span></h2>
     </div>
     <div class="skills">
       <div class="skill-card reveal">
@@ -282,8 +276,8 @@
 <!-- ───────────── Опыт ───────────── -->
 <section class="section" id="experience">
   <div class="container narrow">
-    <div class="section__head reveal">
-      <h2><span lang="ru">Опыт <span class="accent">работы</span></span><span lang="en">Work <span class="accent">experience</span></span></h2>
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Опыт <span class="grad">работы</span></span><span lang="en">Work <span class="grad">experience</span></span></h2>
       <p><span lang="ru">От Junior Unity до Senior Playable Ads&nbsp;— с 2020 года.</span><span lang="en">From Junior Unity to Senior Playable Ads&nbsp;— since 2020.</span></p>
     </div>
     <ol class="timeline">
@@ -329,8 +323,8 @@
 <!-- ───────────── Выпущенные игры ───────────── -->
 <section class="section" id="games">
   <div class="container">
-    <div class="section__head reveal">
-      <h2><span lang="ru">Выпущенные <span class="accent">игры</span></span><span lang="en">Released <span class="accent">games</span></span></h2>
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Выпущенные <span class="grad">игры</span></span><span lang="en">Released <span class="grad">games</span></span></h2>
       <p><span lang="ru">Релизы CREOS Play в RuStore&nbsp;— до перехода в Playable Ads.</span><span lang="en">CREOS Play releases on RuStore&nbsp;— before I moved into playable ads.</span></p>
     </div>
     <div class="games" id="gamesGrid"></div>
@@ -340,7 +334,7 @@
 <!-- ───────────── FAQ ───────────── -->
 <section class="section" id="faq">
   <div class="container narrow">
-    <div class="section__head reveal">
+    <div class="section__head center reveal">
       <h2>FAQ</h2>
     </div>
     <div class="faq reveal">
@@ -376,12 +370,13 @@
 <section class="section contact" id="contact">
   <div class="contact__glow" aria-hidden="true"></div>
   <div class="container center reveal">
-    <h2><span lang="ru">Есть идея для <span class="accent">плеибла?</span></span><span lang="en">Got an idea for a <span class="accent">playable?</span></span></h2>
+    <svg class="sparkle" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+    <h2><span lang="ru">Есть идея для <span class="grad">плеибла?</span></span><span lang="en">Got an idea for a <span class="grad">playable?</span></span></h2>
     <p class="contact__lead"><span lang="ru">Напишите&nbsp;— отвечу в тот же день. Почта&nbsp;— предпочтительный способ связи.</span><span lang="en">Drop me a&nbsp;line&nbsp;— I reply the same day. Email is the preferred way to reach me.</span></p>
     <div class="hero__actions">
       <!-- две ссылки, а не одна: у письма тема на языке посетителя -->
-      <a lang="ru" class="btn btn--primary" href="mailto:karim-agish@yandex.ru?subject=%D0%9F%D0%BB%D0%B5%D0%B8%D0%B1%D0%BB">karim-agish@yandex.ru</a>
-      <a lang="en" class="btn btn--primary" href="mailto:karim-agish@yandex.ru?subject=Playable">karim-agish@yandex.ru</a>
+      <a lang="ru" class="btn btn--cta" href="mailto:karim-agish@yandex.ru?subject=%D0%9F%D0%BB%D0%B5%D0%B8%D0%B1%D0%BB">karim-agish@yandex.ru</a>
+      <a lang="en" class="btn btn--cta" href="mailto:karim-agish@yandex.ru?subject=Playable">karim-agish@yandex.ru</a>
       <button class="btn btn--ghost" id="copyEmail" data-email="karim-agish@yandex.ru"><span lang="ru">Скопировать почту</span><span lang="en">Copy email</span></button>
     </div>
     <!-- Telegram, телефон — из CONTACTS в projects.js; пустое поле рисуется заглушкой -->

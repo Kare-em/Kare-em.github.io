@@ -17,8 +17,8 @@
     speedUp: 0.055,     // +5.5% скорости за каждый поставленный блок
     perfectTol: 0.016,  // допуск «Perfect», доля ширины
     gravity: 2.6,       // ускорение обрезков, высот экрана / с²
-    hue0: 75,           // первый блок лаймовый...
-    hueStep: 10,        // ...к двенадцатому уходит в бирюзу (цвета лендинга)
+    hue0: 200,          // первый блок бирюзовый...
+    hueStep: 13,        // ...через синий к двенадцатому уходит в розовый (цвета лендинга)
     endDelayWin: 0.7,   // пауза перед эндкартой, с — дать увидеть последний блок
     endDelayLose: 1.0,
   };
@@ -105,7 +105,7 @@
         cur.x = prev.x; cur.w = prev.w;
         perfects++; combo++;
         rings.push({ x: cur.x, y: cur.i, w: cur.w, t: 0 });
-        pop(combo > 1 ? 'Perfect ×' + combo : 'Perfect!', cur.x + cur.w / 2, cur.i, '#E2FF6B');
+        pop(combo > 1 ? 'Perfect ×' + combo : 'Perfect!', cur.x + cur.w / 2, cur.i, '#FFD27A');
       } else {
         combo = 0;
         const left = Math.max(cur.x, prev.x);
@@ -128,7 +128,7 @@
       blocks.push({ x: cur.x, w: cur.w, i: cur.i });
       if (blocks.length - 1 >= CFG.goal) {
         state = 'over'; won = true; endTimer = CFG.endDelayWin; cur = null;
-        pop(['Башня готова!', 'Tower complete!'], W / 2, blocks.length + 1, '#7DEBF5');
+        pop(['Башня готова!', 'Tower complete!'], W / 2, blocks.length + 1, '#7EE0B0');
       } else {
         spawn();
       }
@@ -207,14 +207,14 @@
     }
 
     function draw() {
-      // фон: графитовый градиент + звёзды с параллаксом от камеры
+      // фон: тёмно-фиолетовый градиент + звёзды с параллаксом от камеры
       const bg = ctx.createLinearGradient(0, 0, 0, H);
-      bg.addColorStop(0, '#18202B');
-      bg.addColorStop(0.6, '#0F141B');
-      bg.addColorStop(1, '#090C10');
+      bg.addColorStop(0, '#0A1F3D');
+      bg.addColorStop(0.6, '#061229');
+      bg.addColorStop(1, '#02070F');
       ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
       const glow = ctx.createRadialGradient(W / 2, H * 0.75, 0, W / 2, H * 0.75, W * 0.9);
-      glow.addColorStop(0, 'rgba(198,244,50,.12)'); glow.addColorStop(1, 'rgba(198,244,50,0)');
+      glow.addColorStop(0, 'rgba(47,107,255,.35)'); glow.addColorStop(1, 'rgba(47,107,255,0)');
       ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
       ctx.fillStyle = '#fff';
       for (const s of stars) {
@@ -248,7 +248,7 @@
       // кольца Perfect
       for (const r of rings) {
         const k = r.t / 0.6, pad = 4 + k * 16;
-        ctx.strokeStyle = 'rgba(214,255,90,' + (1 - k) + ')'; ctx.lineWidth = 2;
+        ctx.strokeStyle = 'rgba(255,210,122,' + (1 - k) + ')'; ctx.lineWidth = 2;
         roundRect(r.x - pad, yOf(r.y + 1) - pad, r.w + pad * 2, bh + pad * 2, 6 + pad / 2); ctx.stroke();
       }
 
@@ -258,7 +258,7 @@
         const k = p.t / 1.1;
         ctx.globalAlpha = 1 - k * k;
         ctx.fillStyle = p.color;
-        ctx.font = '700 ' + Math.round(W * 0.065) + 'px Unbounded, system-ui, sans-serif';
+        ctx.font = '700 ' + Math.round(W * 0.065) + 'px Manrope, system-ui, sans-serif';
         ctx.fillText(tx(p.text), p.x, yOf(p.i + 1) - 14 - k * 40);
       }
       ctx.globalAlpha = 1;
@@ -266,7 +266,7 @@
       // HUD: счёт сверху (ниже «чёлки» телефона)
       const placed = blocks.length - 1;
       ctx.fillStyle = '#fff';
-      ctx.font = '800 ' + Math.round(W * 0.17) + 'px Unbounded, system-ui, sans-serif';
+      ctx.font = '800 ' + Math.round(W * 0.17) + 'px Manrope, system-ui, sans-serif';
       ctx.fillText(String(placed), W / 2, H * 0.16);
       ctx.fillStyle = 'rgba(255,255,255,.55)';
       ctx.font = '500 ' + Math.round(W * 0.045) + 'px Onest, system-ui, sans-serif';
@@ -275,7 +275,7 @@
       const pw = W * 0.4, px = (W - pw) / 2, py = H * 0.16 + W * 0.11;
       ctx.fillStyle = 'rgba(255,255,255,.12)'; roundRect(px, py, pw, 4, 2); ctx.fill();
       const pg = ctx.createLinearGradient(px, 0, px + pw, 0);
-      pg.addColorStop(0, '#C6F432'); pg.addColorStop(1, '#36D6E7');
+      pg.addColorStop(0, '#2F6BFF'); pg.addColorStop(1, '#FF4D7E');
       ctx.fillStyle = pg; roundRect(px, py, pw * Math.min(1, placed / CFG.goal), 4, 2); ctx.fill();
     }
 

@@ -9,15 +9,17 @@
   const L = window.I18N, both = L.both;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ───── Башня в hero — отсылка к демо: блоки сужаются, как после срезов, верхний ездит ─────
-  const tower = $('#heroTower');
-  if (tower) {
-    // [ширина %, отступ слева %]; оттенок от лайма (75) к бирюзе — как CFG.hue0/hueStep в демо
-    const slabs = [[76, 12], [68, 16], [62, 15], [56, 19], [50, 22], [44, 24]];
-    const hue = (i) => 75 + i * 18;
-    tower.innerHTML = slabs.map(([w, x], i) =>
-      '<i style="--w:' + w + '%;--x:' + x + '%;--i:' + i + ';--h:' + hue(i) + '"></i>'
-    ).join('') + '<i class="tower__top" style="--w:44%;--i:' + slabs.length + ';--h:' + hue(slabs.length) + '"></i>';
+  // ───── «Туннель» из квадратов в hero ─────
+  const tunnel = $('.hero__tunnel');
+  if (tunnel) {
+    for (let i = 0; i < 14; i++) {
+      const el = document.createElement('i');
+      el.style.setProperty('--r', (i * 7) + 'deg');
+      el.style.setProperty('--s', Math.pow(0.84, i).toFixed(3));
+      el.style.borderColor = 'rgba(150,200,255,' + (0.05 + i * 0.012).toFixed(3) + ')';
+      el.style.animationDuration = (90 - i * 4) + 's';
+      tunnel.appendChild(el);
+    }
   }
 
   // ───── Шапка и мобильное меню ─────
@@ -91,7 +93,7 @@
   const games = window.GAMES || [];
   const grid = $('#gamesGrid');
   if (!games.length) { $('#games').hidden = true; }
-  const tile = ['#C6F432,#36D6E7', '#36D6E7,#5B8CFF', '#FF6B57,#FFB547', '#FFB547,#C6F432', '#5BD68A,#36D6E7', '#C6F432,#FF6B57'];
+  const tile = ['#2F6BFF,#2EE6B8', '#14C8E8,#2F6BFF', '#2EE6B8,#FF4D7E', '#FF4D7E,#E8245C', '#14C8E8,#3DDC97', '#2F6BFF,#14C8E8'];
   grid.innerHTML = games.map((g, i) =>
     '<a class="game' + (g.featured ? ' game--featured' : '') + '" href="' + esc(g.url) + '" target="_blank" rel="noopener">' +
       '<span class="game__icon" style="background:linear-gradient(135deg,' + tile[i % tile.length] + ')">' +
