@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Karim Agishev — Playable Ads Developer">Карим Агишев — Playable Ads Developer</title>
+  <meta name="description" content="Senior Playable Ads Developer на Cocos Creator и Unity. Плеиблы под AppLovin, Meta, Google, TikTok, Unity и другие сети — от идеи до одного HTML за часы." data-l10n data-en-content="Senior Playable Ads Developer on Cocos Creator and Unity. Playables for AppLovin, Meta, Google, TikTok, Unity and other networks — from idea to a single HTML in hours.">
+  <meta property="og:title" content="Карим Агишев — Playable Ads Developer" data-l10n data-en-content="Karim Agishev — Playable Ads Developer">
+  <meta property="og:description" content="Плеиблы на Cocos Creator и Unity под все рекламные сети. 6+ лет в геймдеве." data-l10n data-en-content="Playables on Cocos Creator and Unity for every ad network. 6+ years in game dev.">
+  <meta name="theme-color" content="#06020D">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' rx='3' fill='%23FF8A1F'/%3E%3Crect x='17' y='2' width='13' height='13' rx='3' fill='%23E04BFF'/%3E%3Crect x='2' y='17' width='13' height='13' rx='3' fill='%233D5BFF'/%3E%3Crect x='17' y='17' width='13' height='13' rx='3' fill='%237B3CFF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- в <head>, а не в конце body: язык должен встать до первой отрисовки -->
+  <script src="assets/js/i18n.js"></script>
+</head>
+<body>
+
+<!-- Двуязычие: тексты парами <span lang="ru">…</span><span lang="en">…</span>,
+     лишний язык прячет CSS по <html lang>. Атрибуты — data-l10n + data-en-*. -->
+
+<!-- ───────────── Шапка ───────────── -->
+<header class="header" id="top">
+  <div class="header__inner">
+    <a class="logo" href="#top" aria-label="На главную" data-l10n data-en-aria-label="Home">
+      <span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="logo__text"><span lang="ru">Карим Агишев</span><span lang="en">Karim Agishev</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#play"><span lang="ru">Демо</span><span lang="en">Demo</span></a>
+      <a href="#process"><span lang="ru">Как работаю</span><span lang="en">Process</span></a>
+      <a href="#ai"><span lang="ru">AI-конвейер</span><span lang="en">AI pipeline</span></a>
+      <a href="#experience"><span lang="ru">Опыт</span><span lang="en">Experience</span></a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Язык" data-l10n data-en-aria-label="Language">
+      <button type="button" data-set-lang="ru">RU</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
+    <a class="btn btn--white btn--sm header__cta" href="#contact"><span lang="ru">Связаться</span><span lang="en">Contact</span></a>
+    <button class="burger" id="burger" aria-label="Меню" data-l10n data-en-aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ───────────── Hero ───────────── -->
+<section class="hero">
+  <div class="hero__tunnel" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <svg class="sparkle" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+    <span class="chip"><span class="dot"></span><span lang="ru">Открыт к предложениям · удалённо</span><span lang="en">Open to offers · remote</span></span>
+    <h1 class="hero__title"><span lang="ru">Плеиблы, в которые<br><span class="grad">хочется тапнуть</span></span><span lang="en">Playables that<br><span class="grad">beg to be tapped</span></span></h1>
+    <p class="hero__lead"><span lang="ru">Senior Playable Ads Developer на&nbsp;Cocos Creator и&nbsp;Unity. Больше 6&nbsp;лет в&nbsp;геймдеве&nbsp;— от&nbsp;архитектуры и&nbsp;механики до&nbsp;одного лёгкого HTML под любую рекламную сеть.</span><span lang="en">Senior Playable Ads Developer working in&nbsp;Cocos Creator and&nbsp;Unity. 6+&nbsp;years in&nbsp;game dev&nbsp;— from architecture and mechanics to&nbsp;a&nbsp;single lightweight HTML for any ad&nbsp;network.</span></p>
+    <div class="hero__actions">
+      <a class="btn btn--orange" href="#contact"><span lang="ru">Обсудить проект</span><span lang="en">Discuss a project</span></a>
+      <a class="btn btn--ghost" href="#play"><span lang="ru">Сыграть в демо ↓</span><span lang="en">Play the demo ↓</span></a>
+    </div>
+    <p class="hero__note"><span lang="ru">Идея → играбельный билд за часы, а не за дни</span><span lang="en">Idea → playable build in hours, not days</span></p>
+  </div>
+
+  <div class="marquee" aria-label="Студии, где я работал" data-l10n data-en-aria-label="Studios I've worked with">
+    <div class="marquee__track">
+      <span>WannaPlay</span><span>Be Nice Games</span><span>CGB Studio</span><span>CREOS Play</span><span>AIR Technologies</span><span>LolGames</span>
+      <span aria-hidden="true">WannaPlay</span><span aria-hidden="true">Be Nice Games</span><span aria-hidden="true">CGB Studio</span><span aria-hidden="true">CREOS Play</span><span aria-hidden="true">AIR Technologies</span><span aria-hidden="true">LolGames</span>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Демо / проекты ───────────── -->
+<section class="section play" id="play">
+  <div class="container">
+    <div class="section__head center reveal">
+      <svg class="sparkle sparkle--sm" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+      <h2><span lang="ru">От ТЗ до</span><span lang="en">From brief to</span> <span class="grad">tap-to-try</span></h2>
+      <p><span lang="ru">Плеибл лучше один раз потрогать, чем десять раз описать. Переключайте проекты и играйте прямо в&nbsp;телефоне&nbsp;— это настоящие HTML-сборки.</span><span lang="en">A playable is better touched once than described ten times. Switch projects and play right in&nbsp;the&nbsp;phone&nbsp;— these are real HTML builds.</span></p>
+    </div>
+
+    <div class="tabs reveal" id="projectTabs" role="tablist"></div>
+
+    <div class="brief reveal">
+      <span class="brief__label mono"><span lang="ru">ТЗ</span><span lang="en">Brief</span></span>
+      <p class="brief__text" id="projectBrief"></p>
+      <span class="brief__send" aria-hidden="true">↑</span>
+    </div>
+
+    <div class="stage reveal">
+      <aside class="stage__side">
+        <div class="mono label"><span lang="ru">О проекте</span><span lang="en">About</span></div>
+        <dl class="specs" id="projectSpecs"></dl>
+      </aside>
+
+      <div class="phone">
+        <div class="phone__notch" aria-hidden="true"></div>
+        <div class="phone__screen" id="phoneScreen"></div>
+      </div>
+
+      <aside class="stage__side">
+        <div class="mono label"><span lang="ru">Внутри</span><span lang="en">Inside</span></div>
+        <ul class="checks" id="projectFeatures"></ul>
+        <button class="btn btn--ghost btn--sm stage__restart" id="restartBtn"><span lang="ru">↻ Перезапустить</span><span lang="en">↻ Restart</span></button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Цифры ───────────── -->
+<section class="section stats">
+  <div class="container stats__grid">
+    <div class="stat reveal"><b data-count="6" data-suffix="+">0</b><span><span lang="ru">лет в геймдеве</span><span lang="en">years in game dev</span></span></div>
+    <div class="stat reveal"><b data-count="2" data-suffix="+">0</b><span><span lang="ru">года делаю Playable Ads</span><span lang="en">years building playable ads</span></span></div>
+    <!-- единица — отдельной парой, а не data-suffix: счётчик отрабатывает один раз и язык бы не сменил -->
+    <div class="stat reveal"><b><i data-count="5" data-prefix="≤ ">0</i><i lang="ru"> МБ</i><i lang="en"> MB</i></b><span><span lang="ru">вес готового билда</span><span lang="en">final build size</span></span></div>
+    <div class="stat reveal"><b data-count="10" data-suffix="+">0</b><span><span lang="ru">рекламных сетей из одного билда</span><span lang="en">ad networks from one build</span></span></div>
+  </div>
+</section>
+
+<!-- ───────────── Как работаю ───────────── -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Как я <span class="grad">работаю</span></span><span lang="en">How I <span class="grad">work</span></span></h2>
+      <p><span lang="ru">Пять шагов от вашей идеи до плеибла, который проходит модерацию сети с первого раза.</span><span lang="en">Five steps from your idea to a playable that passes network moderation on the first try.</span></p>
+    </div>
+
+    <div class="steps">
+      <article class="step reveal">
+        <div class="step__body">
+          <div class="mono step__tag"><span lang="ru">ШАГ 1 · ВЫ ПРИСЫЛАЕТЕ</span><span lang="en">STEP 1 · YOU SEND</span></div>
+          <h3><span lang="ru">Идею, референсы и&nbsp;арт</span><span lang="en">Idea, references and&nbsp;art</span></h3>
+          <p><span lang="ru">ТЗ, ссылки на конкурентов, ассеты игры, прошлые плеиблы. Референсы читаю буквально: композиция и раскладка уровня&nbsp;— как на картинке, а не «по мотивам». Неясное в геймдизайне уточняю до старта, а не после.</span><span lang="en">Brief, competitor links, game assets, past playables. I read references literally: composition and level layout match the picture, not “inspired by”. Game design questions get settled before the start, not after.</span></p>
+          <p class="muted"><span lang="ru">Нет ассетов? Соберу и доработаю в Photoshop и Blender.</span><span lang="en">No assets? I’ll put them together and polish them in Photoshop and Blender.</span></p>
+        </div>
+        <div class="step__visual">
+          <div class="files">
+            <span class="file"><i>📄</i><span lang="ru">ТЗ.pdf</span><span lang="en">brief.pdf</span></span>
+            <span class="file"><i>🎬</i>reference.mp4</span>
+            <span class="file"><i>🖼</i>ui_kit.psd</span>
+            <span class="file"><i>📦</i>assets.zip</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step__body">
+          <div class="mono step__tag"><span lang="ru">ШАГ 2 · АРХИТЕКТУРА</span><span lang="en">STEP 2 · ARCHITECTURE</span></div>
+          <h3><span lang="ru">Логика с&nbsp;нуля, без костылей</span><span lang="en">Clean logic from&nbsp;scratch, no&nbsp;hacks</span></h3>
+          <p><span lang="ru">Архитектура и весь код проекта на TypeScript (Cocos) или C# (Unity). Тайминги и числа&nbsp;— в конфиге, а версии креатива&nbsp;— данными: один билд, а версия переключается одной строкой в готовом HTML.</span><span lang="en">Architecture and all project code in TypeScript (Cocos) or C# (Unity). Timings and numbers live in config, creative versions are data: one build, and the version switches with a single line in the final HTML.</span></p>
+        </div>
+        <div class="step__visual">
+<pre class="code"><span class="c"><span lang="ru">// версии креатива — данными, не пересборкой</span><span lang="en">// creative versions are data, not rebuilds</span></span>
+<span class="k">const</span> VERSION_DEFS = {
+  full:  { levels: <span class="n">3</span>, timer: <span class="n">30</span> },
+  short: { levels: <span class="n">1</span>, timer: <span class="n">15</span> },
+};
+<span class="k">const</span> v = window.__PLAYABLE_VERSION__ ?? <span class="s">'full'</span>;</pre>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step__body">
+          <div class="mono step__tag"><span lang="ru">ШАГ 3 · ГЕЙМПЛЕЙ</span><span lang="en">STEP 3 · GAMEPLAY</span></div>
+          <h3><span lang="ru">Сочность, которую видно с&nbsp;первого тапа</span><span lang="en">Juice you feel from the&nbsp;first&nbsp;tap</span></h3>
+          <p><span lang="ru">Механика, физика (вплоть до Ragdoll), tween-анимации, VFX и звук, шейдеры. Адаптивный UI под портрет и ландшафт, туториал-рука, эндкарта, CTA в стор. 2D и 3D&nbsp;— без разницы.</span><span lang="en">Mechanics, physics (down to ragdoll), tween animation, VFX and sound, shaders. Adaptive UI for portrait and landscape, tutorial hand, end card, store CTA. 2D or 3D&nbsp;— doesn’t matter.</span></p>
+        </div>
+        <div class="step__visual">
+          <div class="tags">
+            <span><span lang="ru">Физика</span><span lang="en">Physics</span></span><span>Tween</span><span>VFX / SFX</span><span><span lang="ru">Шейдеры</span><span lang="en">Shaders</span></span><span><span lang="ru">Адаптивный UI</span><span lang="en">Adaptive UI</span></span><span>2D / 3D</span><span><span lang="ru">Туториал</span><span lang="en">Tutorial</span></span><span><span lang="ru">Эндкарта</span><span lang="en">End card</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step__body">
+          <div class="mono step__tag"><span lang="ru">ШАГ 4 · СБОРКА</span><span lang="en">STEP 4 · BUILD</span></div>
+          <h3><span lang="ru">Один HTML под каждую сеть</span><span lang="en">One HTML for every network</span></h3>
+          <p><span lang="ru">Упаковка в один файл с учётом требований и лимитов каждой площадки. Текстуры в WebP, контроль веса по отчёту сборки&nbsp;— укладываю в 5&nbsp;МБ. Аналитика AppLovin, сторонние SDK, Luna Playworks.</span><span lang="en">Packed into a single file that meets each network’s requirements and limits. WebP textures, size tracked by the build report&nbsp;— fits under 5&nbsp;MB. AppLovin analytics, third-party SDKs, Luna Playworks.</span></p>
+        </div>
+        <div class="step__visual">
+          <div class="networks">
+            <span>AppLovin</span><span>Meta</span><span>Google</span><span>TikTok</span><span>Unity</span><span>ironSource</span><span>Mintegral</span><span>Moloco</span><span>Liftoff</span><span>Vungle</span><span>Snapchat</span><span>MRAID</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step__body">
+          <div class="mono step__tag"><span lang="ru">ШАГ 5 · ЗАПУСК</span><span lang="en">STEP 5 · LAUNCH</span></div>
+          <h3><span lang="ru">Проверка живьём и&nbsp;правки за&nbsp;минуты</span><span lang="en">Live testing and&nbsp;fixes in&nbsp;minutes</span></h3>
+          <p><span lang="ru">Прогоняю собранный билд в браузере как пользователь: тапы, эндкарта, переход в стор. Реджекты от сетей исправляю, правки заказчика вношу в тот же день&nbsp;— обычно за минуты.</span><span lang="en">I run the final build in a browser like a real user: taps, end card, store redirect. Network rejects get fixed, client changes land the same day&nbsp;— usually within minutes.</span></p>
+        </div>
+        <div class="step__visual">
+          <ul class="checks checks--big">
+            <li><span lang="ru">Туториал и первый тап</span><span lang="en">Tutorial and first tap</span></li>
+            <li><span lang="ru">Эндкарта и CTA в стор</span><span lang="en">End card and store CTA</span></li>
+            <li><span lang="ru">Вес в лимите сети</span><span lang="en">Size within network limit</span></li>
+            <li><span lang="ru">Портрет и ландшафт</span><span lang="en">Portrait and landscape</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── AI-конвейер ───────────── -->
+<section class="section ai" id="ai">
+  <div class="container ai__grid">
+    <div class="ai__text reveal">
+      <div class="mono step__tag"><span lang="ru">ПРЕИМУЩЕСТВО</span><span lang="en">THE EDGE</span></div>
+      <h2><span lang="ru">AI-агент в&nbsp;команде, а&nbsp;не&nbsp;«поспрашивал нейросеть»</span><span lang="en">An AI agent on&nbsp;the&nbsp;team, not&nbsp;“asked a&nbsp;chatbot”</span></h2>
+      <p><span lang="ru">Claude Code&nbsp;— мой основной инструмент. Он подключён к редактору Cocos через MCP-мост и работает в проекте как полноценный участник:</span><span lang="en">Claude Code is my main tool. It’s connected to the Cocos editor through an MCP bridge and works in the project as a full team member:</span></p>
+      <ul class="checks">
+        <li><span lang="ru">сам читает иерархию сцены, правит ноды, префабы и компоненты</span><span lang="en">reads the scene hierarchy and edits nodes, prefabs and components on its own</span></li>
+        <li><span lang="ru">запускает превью, снимает скриншоты, читает логи редактора</span><span lang="en">runs the preview, takes screenshots, reads editor logs</span></li>
+        <li><span lang="ru">после каждой правки&nbsp;— диагностика и чистая компиляция</span><span lang="en">after every change&nbsp;— diagnostics and a clean compile</span></li>
+        <li><span lang="ru">сборка, проверка живьём, отчёт по весу и переименование под сети&nbsp;— одной командой</span><span lang="en">build, live check, size report and per-network renaming&nbsp;— in one command</span></li>
+        <li><span lang="ru">рутину и аудит ассетов отдаю субагентам, сам&nbsp;— геймдизайн и качество</span><span lang="en">routine work and asset audits go to sub-agents; I&nbsp;focus on game design and quality</span></li>
+      </ul>
+    </div>
+
+    <div class="terminal reveal" aria-label="Пример работы конвейера" data-l10n data-en-aria-label="Pipeline example">
+      <div class="terminal__bar"><i></i><i></i><i></i><span>claude — playable</span></div>
+      <div class="terminal__body" id="terminal">
+        <div class="t-line" data-delay="0"><span class="t-prompt">›</span> <span lang="ru">кнопку ниже, замедли падение в 2 раза, собери билд</span><span lang="en">move the button lower, slow the fall 2×, build it</span></div>
+        <div class="t-line t-ok" data-delay="700"><span lang="ru">прочитал ТЗ и референсы</span><span lang="en">read the brief and references</span></div>
+        <div class="t-line t-ok" data-delay="1300"><span lang="ru">правка сцены через MCP</span><span lang="en">scene edit via MCP</span>: Canvas/ui/cta_button</div>
+        <div class="t-line t-ok" data-delay="1900"><span lang="ru">конфиг версии</span><span lang="en">version config</span>: fallSpeed × 0.5</div>
+        <div class="t-line t-ok" data-delay="2500"><span lang="ru">диагностика скриптов — 0 ошибок</span><span lang="en">script diagnostics — 0 errors</span></div>
+        <div class="t-line t-ok" data-delay="3100"><span lang="ru">превью 1080×1920, скриншот сверен</span><span lang="en">preview 1080×1920, screenshot checked</span></div>
+        <div class="t-line t-ok" data-delay="3700"><span lang="ru">сборка</span><span lang="en">build</span> super-html → applovin.html</div>
+        <div class="t-line t-ok" data-delay="4300"><span lang="ru">вес в лимите сети</span><span lang="en">size within network limit</span></div>
+        <div class="t-line t-done" data-delay="5000"><span lang="ru">Готово. Правка заказчика — за минуты, а не за день.</span><span lang="en">Done. A client change in minutes, not a day.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Навыки ───────────── -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Стек и <span class="grad">навыки</span></span><span lang="en">Stack &amp; <span class="grad">skills</span></span></h2>
+    </div>
+    <div class="skills">
+      <div class="skill-card reveal">
+        <h4><span lang="ru">Движки</span><span lang="en">Engines</span></h4>
+        <div class="tags"><span>Cocos Creator 3.8</span><span>Unity 3D</span><span>Luna Playworks</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span lang="ru">Языки</span><span lang="en">Languages</span></h4>
+        <div class="tags"><span>TypeScript</span><span>C#</span><span>JavaScript</span><span>C++</span><span>SQL</span><span>PHP</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span lang="ru">Геймплей</span><span lang="en">Gameplay</span></h4>
+        <div class="tags"><span><span lang="ru">Физика</span><span lang="en">Physics</span> / Ragdoll</span><span><span lang="ru">Шейдеры</span><span lang="en">Shaders</span></span><span>VFX / SFX</span><span><span lang="ru">Анимации</span><span lang="en">Animation</span></span><span>2D / 3D</span><span><span lang="ru">Адаптивный UI</span><span lang="en">Adaptive UI</span></span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span lang="ru">Продакшн</span><span lang="en">Production</span></h4>
+        <div class="tags"><span><span lang="ru">Сжатие до 5 МБ</span><span lang="en">Compression to 5 MB</span></span><span><span lang="ru">Аналитика AppLovin</span><span lang="en">AppLovin analytics</span></span><span>SDK</span><span><span lang="ru">Фикс реджектов</span><span lang="en">Reject fixes</span></span><span><span lang="ru">Профилирование</span><span lang="en">Profiling</span></span><span>Google Play · Yandex Games · RuStore</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span lang="ru">Инструменты</span><span lang="en">Tools</span></h4>
+        <div class="tags"><span>Claude Code + MCP</span><span>Git / GitHub</span><span>Photoshop</span><span>Blender</span><span>Trello</span><span>Asana</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span lang="ru">База</span><span lang="en">Foundations</span></h4>
+        <div class="tags"><span><span lang="ru">ООП</span><span lang="en">OOP</span> / SOLID</span><span><span lang="ru">Паттерны</span><span lang="en">Design patterns</span></span><span><span lang="ru">Алгоритмы</span><span lang="en">Algorithms</span></span><span><span lang="ru">Линейная алгебра</span><span lang="en">Linear algebra</span></span><span><span lang="ru">Программная инженерия, ОГУ</span><span lang="en">Software Engineering degree</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Опыт ───────────── -->
+<section class="section" id="experience">
+  <div class="container narrow">
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Опыт <span class="grad">работы</span></span><span lang="en">Work <span class="grad">experience</span></span></h2>
+      <p><span lang="ru">От Junior Unity до Senior Playable Ads&nbsp;— с 2020 года.</span><span lang="en">From Junior Unity to Senior Playable Ads&nbsp;— since 2020.</span></p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="timeline__date mono"><span lang="ru">2025 — сейчас</span><span lang="en">2025 — now</span></span>
+        <h3>WannaPlay <span class="muted">· Playable Ads Developer (Cocos)</span></h3>
+        <p><span lang="ru">Плеиблы на Cocos Creator 3.8 с AI-конвейером на Claude Code: архитектура с нуля, адаптивный UI, VFX, физика, 3D, сжатие под лимиты сетей, исправление реджектов.</span><span lang="en">Playables on Cocos Creator 3.8 with an AI pipeline on Claude Code: architecture from scratch, adaptive UI, VFX, physics, 3D, compression to network limits, reject fixes.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2025</span>
+        <h3>Be Nice Games <span class="muted">· Playable Ads Developer (Cocos, Unity)</span></h3>
+        <p><span lang="ru">Плеиблы на Cocos и Unity: логика, анимации, VFX/SFX, встраивание SDK, оптимизация веса и производительности.</span><span lang="en">Playables on Cocos and Unity: logic, animation, VFX/SFX, SDK integration, size and performance optimization.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2024 — 2025</span>
+        <h3>CGB Studio <span class="muted">· Senior Cocos Developer (Playable Ads)</span></h3>
+        <p><span lang="ru">Плеиблы на Cocos Creator под рекламные сети: архитектура, интеграция ресурсов, физика, 3D, сжатие билдов.</span><span lang="en">Playables on Cocos Creator for ad networks: architecture, asset integration, physics, 3D, build compression.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2022 — 2024</span>
+        <h3>Be Nice Games <span class="muted">· Senior Unity Developer</span></h3>
+        <p><span lang="ru">Гиперказуальные и настольные игры: архитектура, оптимизация под мобильные, SDK, криптомеханики и NFT-проект Space Animals.</span><span lang="en">Hyper-casual and board games: architecture, mobile optimization, SDKs, crypto mechanics and the Space Animals NFT project.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2022</span>
+        <h3>CREOS Play <span class="muted">· Middle Unity Developer</span></h3>
+        <p><span lang="ru">Гиперказуальные и настольные игры с релизами в Google Play и RuStore.</span><span lang="en">Hyper-casual and board games released on Google Play and RuStore.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2020 — 2022</span>
+        <h3>AIR Technologies <span class="muted">· Junior Unity Developer</span></h3>
+        <p><span lang="ru">Игры и приложения с взаимодействием через AR.</span><span lang="en">AR-based games and apps.</span></p>
+      </li>
+      <li class="reveal">
+        <span class="timeline__date mono">2020</span>
+        <h3>LolGames <span class="muted">· Junior Unity Developer</span></h3>
+        <p><span lang="ru">Игровые механики и настройка игровых ресурсов.</span><span lang="en">Game mechanics and game resource setup.</span></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────── Выпущенные игры ───────────── -->
+<section class="section" id="games">
+  <div class="container">
+    <div class="section__head center reveal">
+      <h2><span lang="ru">Выпущенные <span class="grad">игры</span></span><span lang="en">Released <span class="grad">games</span></span></h2>
+      <p><span lang="ru">Релизы CREOS Play в RuStore&nbsp;— до перехода в Playable Ads.</span><span lang="en">CREOS Play releases on RuStore&nbsp;— before I moved into playable ads.</span></p>
+    </div>
+    <div class="games" id="gamesGrid"></div>
+  </div>
+</section>
+
+<!-- ───────────── FAQ ───────────── -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="section__head center reveal">
+      <h2>FAQ</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary><span lang="ru">Под какие рекламные сети собираешь?</span><span lang="en">Which ad networks do you build for?</span></summary>
+        <p><span lang="ru">AppLovin, Meta (Facebook), Google, TikTok, Unity, ironSource, Mintegral, Moloco, Liftoff, Vungle, Snapchat, MRAID-совместимые площадки и Luna Playworks. Билд собирается один, файлы под сети раскладываются и переименуются по требованиям каждой площадки.</span><span lang="en">AppLovin, Meta (Facebook), Google, TikTok, Unity, ironSource, Mintegral, Moloco, Liftoff, Vungle, Snapchat, MRAID-compatible networks and Luna Playworks. There’s one build; per-network files are laid out and renamed to match each network’s requirements.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Сколько времени занимает плеибл?</span><span lang="en">How long does a playable take?</span></summary>
+        <p><span lang="ru">Благодаря AI-конвейеру путь от идеи до играбельного билда занимает часы, а не дни. Итоговый срок зависит от механики и готовности ассетов&nbsp;— оценю после ТЗ.</span><span lang="en">Thanks to the AI pipeline, going from idea to a playable build takes hours, not days. The final timeline depends on the mechanics and asset readiness&nbsp;— I’ll estimate after the brief.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Что нужно от вас для старта?</span><span lang="en">What do you need from me to start?</span></summary>
+        <p><span lang="ru">Идея или ТЗ, референсы (видео, плеиблы конкурентов) и арт игры. Если ассетов не хватает&nbsp;— доработаю в Photoshop и Blender.</span><span lang="en">An idea or brief, references (videos, competitor playables) and the game’s art. If assets are missing, I’ll fill the gaps in Photoshop and Blender.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Сеть отклонила плеибл&nbsp;— поможешь?</span><span lang="en">A network rejected my playable&nbsp;— can you help?</span></summary>
+        <p><span lang="ru">Да. Исправление реджектов&nbsp;— часть работы: вес, требования MRAID и API сети, ссылки на стор, поведение CTA.</span><span lang="en">Yes. Fixing rejects is part of the job: size, MRAID and network API requirements, store links, CTA behavior.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Можно сделать несколько версий креатива?</span><span lang="en">Can you make several creative versions?</span></summary>
+        <p><span lang="ru">Да, и без лишних сборок: версии описываются данными, а нужная включается одной строкой в готовом HTML. Один билд&nbsp;— сколько угодно вариантов для A/B-тестов.</span><span lang="en">Yes, without extra builds: versions are described as data, and the one you need is switched on with a single line in the final HTML. One build&nbsp;— as many variants as your A/B tests need.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Формат работы?</span><span lang="en">How do you work?</span></summary>
+        <p><span lang="ru">Удалённо: постоянная работа или проектная подработка.</span><span lang="en">Remotely: full-time or project-based.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Контакты ───────────── -->
+<section class="section contact" id="contact">
+  <div class="contact__glow" aria-hidden="true"></div>
+  <div class="container center reveal">
+    <svg class="sparkle" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0c1.4 10.6 8.4 17.6 20 20-11.6 2.4-18.6 9.4-20 20-1.4-10.6-8.4-17.6-20-20C11.6 17.6 18.6 10.6 20 0z"/></svg>
+    <h2><span lang="ru">Есть идея для <span class="grad">плеибла?</span></span><span lang="en">Got an idea for a <span class="grad">playable?</span></span></h2>
+    <p class="contact__lead"><span lang="ru">Напишите&nbsp;— отвечу в тот же день. Почта&nbsp;— предпочтительный способ связи.</span><span lang="en">Drop me a&nbsp;line&nbsp;— I reply the same day. Email is the preferred way to reach me.</span></p>
+    <div class="hero__actions">
+      <!-- две ссылки, а не одна: у письма тема на языке посетителя -->
+      <a lang="ru" class="btn btn--orange" href="mailto:karim-agish@yandex.ru?subject=%D0%9F%D0%BB%D0%B5%D0%B8%D0%B1%D0%BB">karim-agish@yandex.ru</a>
+      <a lang="en" class="btn btn--orange" href="mailto:karim-agish@yandex.ru?subject=Playable">karim-agish@yandex.ru</a>
+      <button class="btn btn--ghost" id="copyEmail" data-email="karim-agish@yandex.ru"><span lang="ru">Скопировать почту</span><span lang="en">Copy email</span></button>
+    </div>
+    <!-- Telegram, телефон — из CONTACTS в projects.js; пустое поле рисуется заглушкой -->
+    <div class="contacts" id="contactsRow"></div>
+    <div class="links">
+      <a href="https://disk.yandex.ru/d/RcALbVSgMr_ZUQ" target="_blank" rel="noopener"><span lang="ru">Портфолио · Яндекс Диск ↗</span><span lang="en">Portfolio · Yandex Disk ↗</span></a>
+      <a href="https://drive.google.com/drive/folders/1zqThggkT67mlMgefKD5v510bEz31Gw4-" target="_blank" rel="noopener"><span lang="ru">Портфолио · Google Drive ↗</span><span lang="en">Portfolio · Google Drive ↗</span></a>
+      <a href="https://drive.google.com/file/d/1OLOBf_rmOz6dQIsQH9vlKPNHR07pN3pM/view?usp=sharing" target="_blank" rel="noopener"><span lang="ru">Рекомендательное письмо CREOS Play ↗</span><span lang="en">Recommendation letter · CREOS Play ↗</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year">2026</span> <span lang="ru">Карим Агишев</span><span lang="en">Karim Agishev</span></span>
+    <span class="muted"><span lang="ru">Собрано на чистом HTML, CSS и JS&nbsp;— как плеибл, без лишнего веса</span><span lang="en">Built with plain HTML, CSS and JS&nbsp;— like a playable, no extra weight</span></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/projects.js"></script>
+<script src="assets/js/demo-stack.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
