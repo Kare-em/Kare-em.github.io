@@ -24,6 +24,16 @@ projects/<имя>/index.html  собранные плеиблы (создать 
 - Подсказка «Тапни» в демо стоит `top: 48%` — над башней; основание на `CFG.baseY`
   (0.80). Двигаешь одно — проверь второе.
 
+## Двуязычие RU/EN (`assets/js/i18n.js`, подключён в `<head>`)
+- Оба текста рядом: `<span lang="ru">…</span><span lang="en">…</span>`; CSS прячет
+  чужой по `<html lang>`. Язык: `?lang=` → localStorage → язык браузера
+  (ru/uk/be/kk → ru, прочие → en). Ссылка на английскую версию — `/?lang=en`.
+- Атрибуты (aria-label, meta content): `data-l10n data-en-<attr>="…"`; `<title data-en>`.
+- Данные в `projects.js` — `{ ru, en }`, рендер через `I18N.both()` (без
+  перерисовки при смене языка); canvas демо — `tx([ru, en])` каждый кадр.
+- Новый CSS по тегу внутри карточек — только через `>`: `.tags span` задел бы и
+  вложенные `span[lang]` (уже исправлено у `.tags > span`, `.stat > span`).
+
 ## Превью
 `.claude/launch.json` → «landing»: `python -m http.server 5180 --bind 127.0.0.1`.
 Мобилку проверять в панели Browser (`resize_window` mobile), не headless-скрином
@@ -32,5 +42,10 @@ projects/<имя>/index.html  собранные плеиблы (создать 
 ## Состояние на 09.10.2026
 - Google Play (Crazy Car, The Great Battle, I Am Ouch) → 404, spaceanimals.io
   лежит — на сайт не вынесены. Игры только из RuStore.
-- Телефон на сайт не выносили — ждёт решения владельца.
-- Хостинг не выбран, git не инициализирован.
+- Телефон и Telegram — заглушки «скоро» (`window.CONTACTS` в `projects.js`,
+  пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
+- Вкладки Grocery Sorting и Gin Rummy — заглушки `soon: true`, сборки ждут.
+- Хостинг: GitHub Pages, репо `Kare-em/Kare-em.github.io` (public), сайт
+  https://kare-em.github.io/. Деплой = коммит + `git push` в `main`, Pages
+  пересобирается сам (~1 мин). Remote с `Kare-em@` — см. `~/.claude/docs/git.md`.
+- `CLAUDE.md` лежит в публичном репо и виден по `/CLAUDE.md` — личного сюда не писать.
