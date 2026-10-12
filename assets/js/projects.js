@@ -44,6 +44,28 @@ window.PROJECTS = [
     ],
     demo: 'stack',
   },
+  {
+    id: 'white-redesign',
+    title: 'Forge Idle',
+    tag: { ru: 'Cocos Creator · idle-аркада', en: 'Cocos Creator · idle arcade' },
+    brief: {
+      ru: 'Сделай плеибл в жанре idle-аркады: герой бегает джойстиком, носит руду из шахты в печь и на наковальню, продаёт товар покупателям из очереди и тратит монеты на апгрейды.',
+      en: 'Make an idle-arcade playable: the hero runs on a joystick, carries ore from the mine to the furnace and anvil, sells goods to a queue of customers and spends coins on upgrades.',
+    },
+    specs: [
+      [{ ru: 'Движок', en: 'Engine' }, 'Cocos Creator 3.8'],
+      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 5 МБ', en: '≈ 5 MB' }],
+      [{ ru: 'Сборка', en: 'Build' }, { ru: 'super-html, один HTML', en: 'super-html, single HTML' }],
+      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
+    ],
+    features: [
+      { ru: 'Джойстик и туториал', en: 'Joystick & tutorial' },
+      { ru: 'Цепочка производства', en: 'Production chain' },
+      { ru: 'Очередь покупателей', en: 'Customer queue' },
+      { ru: 'Апгрейды и босс', en: 'Upgrades & boss' },
+    ],
+    src: 'projects/white-redesign/index.html',
+  },
 
   // Заглушки: сборки ещё не перенесены. Заполнить по образцу Stack Tower, добавить src, убрать soon.
   {
