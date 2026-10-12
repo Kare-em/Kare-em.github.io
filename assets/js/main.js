@@ -74,7 +74,8 @@
 
   tabs.innerHTML = projects.map((p) =>
     '<button class="tab" role="tab" type="button" data-id="' + esc(p.id) + '"' + (p.soon ? ' disabled' : '') + '>' +
-      both(p.title) + '<small>' + both(p.tag) + (p.soon ? both({ ru: ' · скоро', en: ' · soon' }) : '') + '</small></button>'
+      (p.thumb ? '<img class="tab__thumb" src="' + esc(p.thumb) + '" alt="" width="66" height="88">' : '') +
+      '<span class="tab__text">' + both(p.title) + '<small>' + both(p.tag) + (p.soon ? both({ ru: ' · скоро', en: ' · soon' }) : '') + '</small></span></button>'
   ).join('');
   document.addEventListener('langchange', () => {
     const f = $('iframe', screen);

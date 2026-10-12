@@ -17,6 +17,7 @@
      tag       — подпись мелким шрифтом под названием (движок/жанр)
      brief     — «ТЗ» в строке над телефоном: одна-две фразы, что просили сделать
      features  — что внутри плеибла (правая колонка, галочки)
+     thumb     — миниатюра на вкладке: assets/img/thumbs/<id>.webp, 132×176 (3:4, кадр геймплея)
      src       — путь к html плеибла; откроется в телефоне через iframe
      demo      — вместо src: имя встроенного демо (сейчас есть только 'stack')
      soon      — true = неактивная вкладка-заглушка с пометкой «скоро» */
@@ -35,6 +36,7 @@ window.PROJECTS = [
       { ru: 'Очередь покупателей', en: 'Customer queue' },
       { ru: 'Апгрейды и босс', en: 'Upgrades & boss' },
     ],
+    thumb: 'assets/img/thumbs/white-redesign.webp',
     src: 'projects/white-redesign/index.html',
   },
   {
@@ -51,6 +53,7 @@ window.PROJECTS = [
       { ru: '17 языков', en: '17 languages' },
       { ru: 'Версии из одного билда', en: 'Versions from one build' },
     ],
+    thumb: 'assets/img/thumbs/solitaire.webp',
     src: 'projects/solitaire/index.html',
   },
   {
@@ -67,6 +70,7 @@ window.PROJECTS = [
       { ru: 'Perfect-бонус', en: 'Perfect bonus' },
       { ru: 'Эндкарта и CTA', en: 'End card & CTA' },
     ],
+    thumb: 'assets/img/thumbs/stack-demo.webp',
     demo: 'stack',
   },
 ];

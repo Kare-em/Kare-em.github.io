@@ -54,6 +54,9 @@ projects/<имя>/index.html  собранные плеиблы (создать 
   только с рабочими сборками. Механизм `soon` в `main.js` оставлен.
 - Вкладки: Forge Idle → Косынка · Гжель (12.10.2026, AppLovin-сборка из
   `../Solitaire-Cut-Cocos/build/super-html/applovin/`) → Stack Tower (демо).
+- У вкладок миниатюры `assets/img/thumbs/<id>.webp` 132×176 (кадр геймплея 3:4, поле
+  `thumb`). Новый проект — снять кадр через CDP через ~8 с после загрузки (headless
+  `--screenshot` ловит экран загрузки). Без `loading="lazy"`: в скрытой вкладке не грузится.
 - Аналитика: счётчик mytopf.com (код Top.Mail.ru, id 3801162) в `<head>` `index.html`,
   стреляет только на `*.github.io` — локальное превью не считается. 12.10.2026 с машины
   разработки mytopf.com рвёт TLS (curl 000), top-fwz1.mail.ru отвечает 200.
