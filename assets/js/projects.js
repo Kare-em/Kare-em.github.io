@@ -4,7 +4,7 @@
    1. Положить собранный html в projects/<имя>/index.html
       (для AppLovin-сборки super-html это один файл — просто скопировать).
    2. Найти его заглушку в PROJECTS (или добавить объект по образцу ниже),
-      заполнить brief/specs/features, указать src.
+      заполнить brief/features, указать src.
    3. Строку soon: true удалить — вкладка станет активной.
    Порядок в массиве = порядок вкладок; первая активная открывается по умолчанию.
 
@@ -16,7 +16,6 @@
      title     — название на вкладке
      tag       — подпись мелким шрифтом под названием (движок/жанр)
      brief     — «ТЗ» в строке над телефоном: одна-две фразы, что просили сделать
-     specs     — пары [подпись, значение] для левой колонки
      features  — что внутри плеибла (правая колонка, галочки)
      src       — путь к html плеибла; откроется в телефоне через iframe
      demo      — вместо src: имя встроенного демо (сейчас есть только 'stack')
@@ -30,12 +29,6 @@ window.PROJECTS = [
       ru: 'Сделай плеибл в жанре idle-аркады: герой бегает джойстиком, носит руду из шахты в печь и на наковальню, продаёт товар покупателям из очереди и тратит монеты на апгрейды.',
       en: 'Make an idle-arcade playable: the hero runs on a joystick, carries ore from the mine to the furnace and anvil, sells goods to a queue of customers and spends coins on upgrades.',
     },
-    specs: [
-      [{ ru: 'Движок', en: 'Engine' }, 'Cocos Creator 3.8'],
-      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 4,6 МБ', en: '≈ 4.6 MB' }],
-      [{ ru: 'Сборка', en: 'Build' }, { ru: 'super-html, один HTML', en: 'super-html, single HTML' }],
-      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
-    ],
     features: [
       { ru: 'Джойстик и туториал', en: 'Joystick & tutorial' },
       { ru: 'Цепочка производства', en: 'Production chain' },
@@ -52,12 +45,6 @@ window.PROJECTS = [
       ru: 'Сделай плеибл-косынку в стиле Гжели: рука подсказывает ход, игрок делает пару ходов сам, дальше пасьянс собирается в дома и показывается пакшот со стором.',
       en: 'Make a Klondike solitaire playable in Gzhel style: a hand hints the move, the player makes a couple of moves, then the cards auto-collect into the foundations and a packshot leads to the store.',
     },
-    specs: [
-      [{ ru: 'Движок', en: 'Engine' }, 'Cocos Creator 3.8'],
-      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 3,4 МБ', en: '≈ 3.4 MB' }],
-      [{ ru: 'Сборка', en: 'Build' }, { ru: 'super-html, один HTML', en: 'super-html, single HTML' }],
-      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет и ландшафт', en: 'Portrait & landscape' }],
-    ],
     features: [
       { ru: 'Подсказка хода рукой', en: 'Hand move hint' },
       { ru: 'Автосбор в дома', en: 'Auto-collect to foundations' },
@@ -74,12 +61,6 @@ window.PROJECTS = [
       ru: 'Сделай мини-плеибл: блок ездит туда-обратно, тап — роняешь, лишнее срезается. Один палец, 15 секунд, туториал-рука в начале и эндкарта с CTA в конце.',
       en: 'Make a mini playable: a block slides back and forth, tap to drop it, the overhang gets sliced off. One finger, 15 seconds, a tutorial hand at the start and an end card with a CTA.',
     },
-    specs: [
-      [{ ru: 'Движок', en: 'Engine' }, { ru: 'Чистый Canvas 2D', en: 'Plain Canvas 2D' }],
-      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 8 КБ', en: '≈ 8 KB' }],
-      [{ ru: 'Длительность', en: 'Length' }, { ru: '15–30 с', en: '15–30 s' }],
-      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
-    ],
     features: [
       { ru: 'Туториал-рука', en: 'Tutorial hand' },
       { ru: 'Срез по перекрытию', en: 'Overlap slicing' },

@@ -104,11 +104,6 @@
     </div>
 
     <div class="stage reveal">
-      <aside class="stage__side">
-        <div class="mono label"><span lang="ru">О проекте</span><span lang="en">About</span></div>
-        <dl class="specs" id="projectSpecs"></dl>
-      </aside>
-
       <div class="phone">
         <div class="phone__notch" aria-hidden="true"></div>
         <div class="phone__screen" id="phoneScreen"></div>
@@ -160,23 +155,7 @@
 
       <article class="step reveal">
         <div class="step__body">
-          <div class="mono step__tag"><span lang="ru">ШАГ 2 · АРХИТЕКТУРА</span><span lang="en">STEP 2 · ARCHITECTURE</span></div>
-          <h3><span lang="ru">Логика с&nbsp;нуля, без костылей</span><span lang="en">Clean logic from&nbsp;scratch, no&nbsp;hacks</span></h3>
-          <p><span lang="ru">TypeScript или C#. Числа&nbsp;— в конфиге, версии креатива&nbsp;— данными: один билд на все варианты.</span><span lang="en">TypeScript or C#. Numbers live in config, creative versions are data: one build for every variant.</span></p>
-        </div>
-        <div class="step__visual">
-<pre class="code"><span class="c"><span lang="ru">// версии креатива — данными, не пересборкой</span><span lang="en">// creative versions are data, not rebuilds</span></span>
-<span class="k">const</span> VERSION_DEFS = {
-  full:  { levels: <span class="n">3</span>, timer: <span class="n">30</span> },
-  short: { levels: <span class="n">1</span>, timer: <span class="n">15</span> },
-};
-<span class="k">const</span> v = window.__PLAYABLE_VERSION__ ?? <span class="s">'full'</span>;</pre>
-        </div>
-      </article>
-
-      <article class="step reveal">
-        <div class="step__body">
-          <div class="mono step__tag"><span lang="ru">ШАГ 3 · ГЕЙМПЛЕЙ</span><span lang="en">STEP 3 · GAMEPLAY</span></div>
+          <div class="mono step__tag"><span lang="ru">ШАГ 2 · ГЕЙМПЛЕЙ</span><span lang="en">STEP 2 · GAMEPLAY</span></div>
           <h3><span lang="ru">Сочность, которую видно с&nbsp;первого тапа</span><span lang="en">Juice you feel from the&nbsp;first&nbsp;tap</span></h3>
           <p><span lang="ru">Механика, физика, анимации, VFX, звук, шейдеры, адаптивный UI, туториал и эндкарта.</span><span lang="en">Mechanics, physics, animation, VFX, sound, shaders, adaptive UI, tutorial and end card.</span></p>
         </div>
@@ -189,7 +168,7 @@
 
       <article class="step reveal">
         <div class="step__body">
-          <div class="mono step__tag"><span lang="ru">ШАГ 4 · СБОРКА</span><span lang="en">STEP 4 · BUILD</span></div>
+          <div class="mono step__tag"><span lang="ru">ШАГ 3 · СБОРКА</span><span lang="en">STEP 3 · BUILD</span></div>
           <h3><span lang="ru">Один HTML под каждую сеть</span><span lang="en">One HTML for every network</span></h3>
           <p><span lang="ru">Один файл под требования каждой площадки, до&nbsp;5&nbsp;МБ.</span><span lang="en">A single file per network requirements, under 5&nbsp;MB.</span></p>
         </div>
@@ -202,7 +181,7 @@
 
       <article class="step reveal">
         <div class="step__body">
-          <div class="mono step__tag"><span lang="ru">ШАГ 5 · ЗАПУСК</span><span lang="en">STEP 5 · LAUNCH</span></div>
+          <div class="mono step__tag"><span lang="ru">ШАГ 4 · ЗАПУСК</span><span lang="en">STEP 4 · LAUNCH</span></div>
           <h3><span lang="ru">Проверка живьём и&nbsp;правки за&nbsp;минуты</span><span lang="en">Live testing and&nbsp;fixes in&nbsp;minutes</span></h3>
           <p><span lang="ru">Прогоняю билд как пользователь; реджекты и правки&nbsp;— в тот же день.</span><span lang="en">I play the build like a user; rejects and changes are fixed the same day.</span></p>
         </div>

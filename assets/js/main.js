@@ -39,7 +39,7 @@
 
   // ───── Проекты: вкладки + телефон ─────
   const projects = window.PROJECTS || [];
-  const tabs = $('#projectTabs'), brief = $('#projectBrief'), specs = $('#projectSpecs');
+  const tabs = $('#projectTabs'), brief = $('#projectBrief');
   const feats = $('#projectFeatures'), screen = $('#phoneScreen'), restartBtn = $('#restartBtn');
   let active = null, demo = null;
 
@@ -68,7 +68,6 @@
       b.setAttribute('aria-selected', on);
     });
     brief.innerHTML = both(p.brief);
-    specs.innerHTML = (p.specs || []).map(([k, v]) => '<div><dt>' + both(k) + '</dt><dd>' + both(v) + '</dd></div>').join('');
     feats.innerHTML = (p.features || []).map((f) => '<li>' + both(f) + '</li>').join('');
     mountPhone(p);
   }
