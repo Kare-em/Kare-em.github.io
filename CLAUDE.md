@@ -52,6 +52,9 @@ projects/<имя>/index.html  собранные плеиблы (создать 
   в `projects.js`, пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
 - Заглушки Grocery Sorting и Gin Rummy сняты 12.10.2026 по просьбе владельца — вкладки
   только с рабочими сборками. Механизм `soon` в `main.js` оставлен.
+- Аналитика: счётчик mytopf.com (код Top.Mail.ru, id 3801162) в `<head>` `index.html`,
+  стреляет только на `*.github.io` — локальное превью не считается. 12.10.2026 с машины
+  разработки mytopf.com рвёт TLS (curl 000), top-fwz1.mail.ru отвечает 200.
 - Хостинг: GitHub Pages, репо `Kare-em/Kare-em.github.io` (public), сайт
   https://kare-em.github.io/. Деплой = коммит + `git push` в `main`, Pages
   пересобирается сам (~1 мин). Remote с `Kare-em@` — см. `~/.claude/docs/git.md`.
