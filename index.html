@@ -15,8 +15,25 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- в <head>, а не в конце body: язык должен встать до первой отрисовки -->
   <script src="assets/js/i18n.js"></script>
+  <!-- mytopf.com counter. Считаем только боевой сайт: локальное превью и file:// статистику не портят -->
+  <script type="text/javascript">
+  if (/github\.io$/.test(location.hostname)) {
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({id: "3801162", type: "pageView", start: (new Date()).getTime()});
+  (function (d, w, id) {
+    if (d.getElementById(id)) return;
+    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+    ts.src = "https://mytopf.com/js/code.js";
+    var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+  })(document, window, "tmr-code");
+  }
+  </script>
+  <!-- /mytopf.com counter -->
 </head>
 <body>
+<!-- noscript-пиксель счётчика: в <head> <div>/<img> недопустимы, поэтому он в начале body -->
+<noscript><div><img src="https://mytopf.com/counter?id=3801162;js=na" style="position:absolute;left:-9999px;" alt="mytopf.com" /></div></noscript>
 
 <!-- Двуязычие: тексты парами <span lang="ru">…</span><span lang="en">…</span>,
      лишний язык прячет CSS по <html lang>. Атрибуты — data-l10n + data-en-*. -->
