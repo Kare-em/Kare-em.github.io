@@ -86,6 +86,12 @@
     if (b && !b.disabled) select(b.dataset.id);
   });
   restartBtn.addEventListener('click', () => { if (demo) demo.restart(); else if (active) mountPhone(active); });
+  // Собранный плеибл по CTA шлёт родителю postMessage {type:'playable_cta'} (стор у него
+  // заглушка) — ведём туда же, куда CTA встроенного демо. Принимаем только от своего iframe.
+  window.addEventListener('message', (e) => {
+    const f = $('iframe', screen);
+    if (f && e.source === f.contentWindow && e.data && e.data.type === 'playable_cta') toContact();
+  });
   const first = projects.find((p) => !p.soon);
   if (first) select(first.id);
 
