@@ -66,22 +66,6 @@ window.PROJECTS = [
     ],
     demo: 'stack',
   },
-
-  // Заглушки: сборки ещё не перенесены. Заполнить по образцу Stack Tower, добавить src, убрать soon.
-  {
-    id: 'grocery-sorting',
-    title: 'Grocery Sorting',
-    tag: { ru: 'Cocos Creator · сортировка', en: 'Cocos Creator · sorting' },
-    // src: 'projects/grocery-sorting/index.html',
-    soon: true,
-  },
-  {
-    id: 'gin-rummy',
-    title: 'Gin Rummy',
-    tag: { ru: 'Cocos Creator · карты', en: 'Cocos Creator · cards' },
-    // src: 'projects/gin-rummy/index.html',
-    soon: true,
-  },
 ];
 
 /* Контакты в блоке «Связаться», кроме почты (она в разметке).

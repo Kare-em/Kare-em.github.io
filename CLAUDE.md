@@ -50,7 +50,8 @@ projects/<имя>/index.html  собранные плеиблы (создать 
   лежит — на сайт не вынесены. Игры только из RuStore.
 - Telegram @kare_pro_gram (12.10.2026); телефон — заглушка «скоро» (`window.CONTACTS`
   в `projects.js`, пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
-- Вкладки Grocery Sorting и Gin Rummy — заглушки `soon: true`, сборки ждут.
+- Заглушки Grocery Sorting и Gin Rummy сняты 12.10.2026 по просьбе владельца — вкладки
+  только с рабочими сборками. Механизм `soon` в `main.js` оставлен.
 - Хостинг: GitHub Pages, репо `Kare-em/Kare-em.github.io` (public), сайт
   https://kare-em.github.io/. Деплой = коммит + `git push` в `main`, Pages
   пересобирается сам (~1 мин). Remote с `Kare-em@` — см. `~/.claude/docs/git.md`.
