@@ -48,8 +48,8 @@ projects/<имя>/index.html  собранные плеиблы (создать 
 ## Состояние на 09.10.2026
 - Google Play (Crazy Car, The Great Battle, I Am Ouch) → 404, spaceanimals.io
   лежит — на сайт не вынесены. Игры только из RuStore.
-- Телефон и Telegram — заглушки «скоро» (`window.CONTACTS` в `projects.js`,
-  пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
+- Telegram @kare_pro_gram (12.10.2026); телефон — заглушка «скоро» (`window.CONTACTS`
+  в `projects.js`, пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
 - Вкладки Grocery Sorting и Gin Rummy — заглушки `soon: true`, сборки ждут.
 - Хостинг: GitHub Pages, репо `Kare-em/Kare-em.github.io` (public), сайт
   https://kare-em.github.io/. Деплой = коммит + `git push` в `main`, Pages

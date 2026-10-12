@@ -87,7 +87,7 @@ window.PROJECTS = [
 /* Контакты в блоке «Связаться», кроме почты (она в разметке).
    Пустая строка = заглушка «скоро»; заполнил — стала ссылкой. */
 window.CONTACTS = {
-  telegram: '',   // ник без @: 'karim_dev' → t.me/karim_dev
+  telegram: 'kare_pro_gram',   // ник без @: 'karim_dev' → t.me/karim_dev
   phone: '',      // как показать: '+7 900 000-00-00' → ссылка tel:+79000000000
 };
 
