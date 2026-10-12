@@ -45,6 +45,28 @@ window.PROJECTS = [
     src: 'projects/white-redesign/index.html',
   },
   {
+    id: 'solitaire',
+    title: { ru: 'Косынка · Гжель', en: 'Solitaire · Gzhel' },
+    tag: { ru: 'Cocos Creator · пасьянс', en: 'Cocos Creator · solitaire' },
+    brief: {
+      ru: 'Сделай плеибл-косынку в стиле Гжели: рука подсказывает ход, игрок делает пару ходов сам, дальше пасьянс собирается в дома и показывается пакшот со стором.',
+      en: 'Make a Klondike solitaire playable in Gzhel style: a hand hints the move, the player makes a couple of moves, then the cards auto-collect into the foundations and a packshot leads to the store.',
+    },
+    specs: [
+      [{ ru: 'Движок', en: 'Engine' }, 'Cocos Creator 3.8'],
+      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 3,4 МБ', en: '≈ 3.4 MB' }],
+      [{ ru: 'Сборка', en: 'Build' }, { ru: 'super-html, один HTML', en: 'super-html, single HTML' }],
+      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет и ландшафт', en: 'Portrait & landscape' }],
+    ],
+    features: [
+      { ru: 'Подсказка хода рукой', en: 'Hand move hint' },
+      { ru: 'Автосбор в дома', en: 'Auto-collect to foundations' },
+      { ru: '17 языков', en: '17 languages' },
+      { ru: 'Версии из одного билда', en: 'Versions from one build' },
+    ],
+    src: 'projects/solitaire/index.html',
+  },
+  {
     id: 'stack-demo',
     title: 'Stack Tower',
     tag: { ru: 'демо · Canvas 2D', en: 'demo · Canvas 2D' },

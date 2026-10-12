@@ -52,6 +52,8 @@ projects/<имя>/index.html  собранные плеиблы (создать 
   в `projects.js`, пустая строка = заглушка). Реальный телефон без явного «да» владельца не ставить.
 - Заглушки Grocery Sorting и Gin Rummy сняты 12.10.2026 по просьбе владельца — вкладки
   только с рабочими сборками. Механизм `soon` в `main.js` оставлен.
+- Вкладки: Forge Idle → Косынка · Гжель (12.10.2026, AppLovin-сборка из
+  `../Solitaire-Cut-Cocos/build/super-html/applovin/`) → Stack Tower (демо).
 - Аналитика: счётчик mytopf.com (код Top.Mail.ru, id 3801162) в `<head>` `index.html`,
   стреляет только на `*.github.io` — локальное превью не считается. 12.10.2026 с машины
   разработки mytopf.com рвёт TLS (curl 000), top-fwz1.mail.ru отвечает 200.
