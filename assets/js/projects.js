@@ -54,7 +54,7 @@ window.PROJECTS = [
     },
     specs: [
       [{ ru: 'Движок', en: 'Engine' }, 'Cocos Creator 3.8'],
-      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 5 МБ', en: '≈ 5 MB' }],
+      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 4,6 МБ', en: '≈ 4.6 MB' }],
       [{ ru: 'Сборка', en: 'Build' }, { ru: 'super-html, один HTML', en: 'super-html, single HTML' }],
       [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
     ],
