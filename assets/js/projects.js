@@ -23,28 +23,6 @@
      soon      — true = неактивная вкладка-заглушка с пометкой «скоро» */
 window.PROJECTS = [
   {
-    id: 'stack-demo',
-    title: 'Stack Tower',
-    tag: { ru: 'демо · Canvas 2D', en: 'demo · Canvas 2D' },
-    brief: {
-      ru: 'Сделай мини-плеибл: блок ездит туда-обратно, тап — роняешь, лишнее срезается. Один палец, 15 секунд, туториал-рука в начале и эндкарта с CTA в конце.',
-      en: 'Make a mini playable: a block slides back and forth, tap to drop it, the overhang gets sliced off. One finger, 15 seconds, a tutorial hand at the start and an end card with a CTA.',
-    },
-    specs: [
-      [{ ru: 'Движок', en: 'Engine' }, { ru: 'Чистый Canvas 2D', en: 'Plain Canvas 2D' }],
-      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 8 КБ', en: '≈ 8 KB' }],
-      [{ ru: 'Длительность', en: 'Length' }, { ru: '15–30 с', en: '15–30 s' }],
-      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
-    ],
-    features: [
-      { ru: 'Туториал-рука', en: 'Tutorial hand' },
-      { ru: 'Срез по перекрытию', en: 'Overlap slicing' },
-      { ru: 'Perfect-бонус', en: 'Perfect bonus' },
-      { ru: 'Эндкарта и CTA', en: 'End card & CTA' },
-    ],
-    demo: 'stack',
-  },
-  {
     id: 'white-redesign',
     title: 'Forge Idle',
     tag: { ru: 'Cocos Creator · idle-аркада', en: 'Cocos Creator · idle arcade' },
@@ -65,6 +43,28 @@ window.PROJECTS = [
       { ru: 'Апгрейды и босс', en: 'Upgrades & boss' },
     ],
     src: 'projects/white-redesign/index.html',
+  },
+  {
+    id: 'stack-demo',
+    title: 'Stack Tower',
+    tag: { ru: 'демо · Canvas 2D', en: 'demo · Canvas 2D' },
+    brief: {
+      ru: 'Сделай мини-плеибл: блок ездит туда-обратно, тап — роняешь, лишнее срезается. Один палец, 15 секунд, туториал-рука в начале и эндкарта с CTA в конце.',
+      en: 'Make a mini playable: a block slides back and forth, tap to drop it, the overhang gets sliced off. One finger, 15 seconds, a tutorial hand at the start and an end card with a CTA.',
+    },
+    specs: [
+      [{ ru: 'Движок', en: 'Engine' }, { ru: 'Чистый Canvas 2D', en: 'Plain Canvas 2D' }],
+      [{ ru: 'Вес', en: 'Size' }, { ru: '≈ 8 КБ', en: '≈ 8 KB' }],
+      [{ ru: 'Длительность', en: 'Length' }, { ru: '15–30 с', en: '15–30 s' }],
+      [{ ru: 'Ориентация', en: 'Orientation' }, { ru: 'Портрет 9:16', en: 'Portrait 9:16' }],
+    ],
+    features: [
+      { ru: 'Туториал-рука', en: 'Tutorial hand' },
+      { ru: 'Срез по перекрытию', en: 'Overlap slicing' },
+      { ru: 'Perfect-бонус', en: 'Perfect bonus' },
+      { ru: 'Эндкарта и CTA', en: 'End card & CTA' },
+    ],
+    demo: 'stack',
   },
 
   // Заглушки: сборки ещё не перенесены. Заполнить по образцу Stack Tower, добавить src, убрать soon.
